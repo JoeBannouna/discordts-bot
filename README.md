@@ -34,10 +34,13 @@ npm start
 
 ### Running the bot in development mode
 Note: You need to install nodemon for dev mode
-```bash
-npm run dev
-```
+
 To install nodemon globally: 
 ```bash
 npm i nodemon -g
+```
+
+To run the bot in dev mode
+```bash
+npm run dev
 ```
