@@ -11,7 +11,9 @@ listenForMessages(client);
 
 client.on('ready', () => {
   console.log(`${client.user.tag} has logged in`);
-  exec('zzenity --text="Bot Ready" --notification');
+  
+  // If on linux send notification that bot is ready
+  try { exec('zenity --text="Bot Ready" --notification'); } catch (err) {}
 });
 
 client.login(process.env.DISCORDJS_BOT_TOKEN);
